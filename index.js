@@ -13,9 +13,9 @@ function nowServing(line) {
 
 function currentLine(line) {
   if (line.length < 1) {
-    return "The line is currently empty"
+    return "The line is currently empty."
   }
-  verboseLine = "The line is currently:"
+  var verboseLine = "The line is currently:"
   for (var i = 0; i < line.length; i++) {
     verboseLine = verboseLine + ` ${i + 1}. ${line[i]}`
   }
