@@ -16,5 +16,8 @@ function currentLine(line) {
     return "The line is currently empty"
   }
   verboseLine = "The line is currently:"
-  for (var i = 0;)
+  for (var i = 0; i < line.length; i++) {
+    verboseLine = verboseLine + ` ${i + 1}. ${line[i]}`
+  }
+  return verboseLine
 }
