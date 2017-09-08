@@ -8,7 +8,7 @@ function nowServing(line) {
     return "There is nobody waiting to be served!"
   }
   var person = line.shift()
-  return person
+  return `Currently serving ${person}.`
 }
 
 function currentLine(line) {
